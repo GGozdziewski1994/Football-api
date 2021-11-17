@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football API</title>
+    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="icon" href="src/icon/football.png">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <img src="src/icon/football.png" alt="Logo" class="header__logo">
+            <form class="search">
+                <select class="search__input search__option">
+                    <option value="">-- Choose option --</option>
+                    <option value="scorername">Score name</option>
+                    <option value="scorerposition">Score position</option>
+                    <option value="scorers">Score table</option>
+                    <option value="squadname">Squad name</option>
+                    <option value="squadposition">Squad position</option>
+                    <option value="squads">League table</option>
+                </select>
+
+                <select class="search__input search__league">
+                    <option value="">-- Choose league --</option>
+                    <option value="liga">La Liga</option>
+                    <option value="bundesliga">Bundesliga</option>
+                    <option value="seriea">Serie A</option>
+                    <option value="premierleague">Premier League</option>
+                    <option value="ligue1">Ligue 1</option>
+                </select>
+                <input type="text" class="search__player search__input" placeholder="Player (e.g. messi or 2)">
+                <button class="search__btn">
+                    <img class="search__icon" src="src/icon/pngegg.png">
+                    <span>Search</span>
+                </button>
+            </form>
+        </header>
+
+        <div class="container__text">⚽ Choose your favorite footballer or teams ⚽</div>
+
+        <div class="container">
+
+        </div>
+        <div class="table">
+
+        </div>
+    </div>
+
+    <script type="module" src="src/js/controller.js"></script>
+</body>
+</html>

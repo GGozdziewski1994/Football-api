@@ -1,0 +1,19 @@
+{
+  "name": "football-api",
+  "version": "1.0.0",
+  "main": "index.html",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.0-beta.1"
+  },
+  "description": ""
+}
