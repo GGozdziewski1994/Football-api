@@ -13,5 +13,15 @@ export default class View {
         document.querySelector('.container').textContent = '';
         document.querySelector('.table').textContent = '';
     }
+
+    renderSpinner() {
+        const markup =  `
+        <div class="spinner">
+            <div class="loader"></div>
+        </div>
+        `;
+        this._clear();
+        this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    }
 }
 

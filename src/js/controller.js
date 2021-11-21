@@ -8,6 +8,8 @@ import squadsView from "./views/squadsView";
 
 const controlScorer = async function(data) {
     try {
+        scorersView.renderSpinner();
+
         if(!data.league && !data.player) throw new Error('No data! Please enter data');
 
         await model.loadScorer(data.league, data.option, data.player);
@@ -22,6 +24,8 @@ const controlScorer = async function(data) {
 
 const controlSquad = async function (data) {
     try {
+        squadsView.renderSpinner();
+
         await model.loadSquad(data.league, data.option, data.player);
 
         if(data.option.startsWith('squads')) squadsView.render(model.state.squad);
