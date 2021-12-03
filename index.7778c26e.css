@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: #dcffdc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #3cc53c;
+}
+.header__logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.search {
+  display: flex;
+}
+.search__input {
+  padding: 3px 10px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.search__input:focus {
+  outline: none;
+}
+.search__icon {
+  width: 1rem;
+}
+.search__btn {
+  padding: 5px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.search__btn span {
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.container__data {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+}
+.container__football-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.container__text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+table td, table th {
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  padding: 5px 12px;
+  vertical-align: top;
+}
+table tbody {
+  background-color: white;
+}
+table tbody tr:nth-child(2n) td {
+  background-color: #f3f3f3;
+}
+
+.loader {
+  border: 5px solid #dcdcdc;
+  border-top: 5px solid grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=index.7778c26e.css.map */
